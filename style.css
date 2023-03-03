@@ -1,0 +1,29 @@
+.spoiler{
+    color: #fff;
+    background: #000;
+    /* transition: 0.6s ease-out; */
+    height: 0;
+    transform: translate(0,-50%)scaleY(0);
+    transition: 0.5s;
+}
+
+.fadeIn{
+    /* animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s; */
+   transform: translate(0,0);
+}
+.fadeOut{
+    /* animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s; */
+    transform: translate(0,-50%)scaleY(0);
+}
+@keyframes fadeIn {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+#element:checked ~ #container{
+    
+}
