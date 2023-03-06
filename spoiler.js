@@ -8,7 +8,6 @@ spoilerLink.addEventListener('click', (evt) =>{
     evt.preventDefault();
     
     if (spoilerStatus === 0){
-        spoiler.style.display = 'block';
         //spoiler.style.height = 'auto';
         spoiler.classList.remove('fadeOut');
         spoiler.classList.add('fadeIn');
@@ -22,3 +21,14 @@ spoilerLink.addEventListener('click', (evt) =>{
     }
     console.log(spoilerStatus)
 })
+
+var swiper = new Swiper(".swiper", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    autoHeight: true,
+    navigation: {
+      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+    },
+    freeMode: { enabled: true },
+  });
